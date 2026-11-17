@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "skills": {
+    "langchain-dev-guide": {
+      "source": "../../../../../tmp/agentseek-skills",
+      "sourceType": "local",
+      "computedHash": "4628ec271ff733198ea828f8c7fd05328181ac3f418ee76dc62911787b3a2ad0"
+    },
+    "langsmith-trace": {
+      "source": "../../../../../tmp/agentseek-skills",
+      "sourceType": "local",
+      "computedHash": "1da4182ef74d2a6fa1b49cf522cd722302d24b2153e40676c1cfa576a85fe8f0"
+    }
+  }
+}
