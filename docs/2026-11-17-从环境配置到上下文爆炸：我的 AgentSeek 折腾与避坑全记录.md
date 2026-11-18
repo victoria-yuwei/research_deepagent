@@ -194,3 +194,8 @@ LangGraph (chain) [21.82s]
 
 1.  **区分“包装层”和“实际干活层”**：带有 `Middleware`、`awrap_model_call`、`task` 字样的，全是框架的**包装壳子**。它们本身不产生耗时的瓶颈，不要误判。
 2.  **定位瓶颈**：真正干活、消耗时间的，是 **`ChatOpenAI (llm)`** 和 **`tavily_search` (工具)**。只要解决了上下文过长的问题（控制 Tavily 的抓取量），这个 Agent 的运行速度会起飞。
+
+版权声明：
+相关链接：
+https://github.com/datawhalechina/deepagents-in-action
+https://datawhalechina.github.io/deepagents-in-action/
