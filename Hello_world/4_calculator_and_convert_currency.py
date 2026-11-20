@@ -59,13 +59,6 @@ def convert_currency(amount: float, from_currency: str, to_currency: str = "CNY"
     cny = amount * rates[from_currency]
     return {"amount": round(cny / rates[to_currency], 2), "currency": to_currency}
 
-
-
-
-
-
-
-
 agent = create_deep_agent(
     model=model,
     tools=[convert_currency, calculate, ],
