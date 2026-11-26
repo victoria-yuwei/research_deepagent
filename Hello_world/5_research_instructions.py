@@ -10,7 +10,7 @@ from langchain.agents.middleware import TodoListMiddleware
 
 tavily_client = TavilyClient(api_key=os.environ["TAVILY_API_KEY"])
 
-# 定义搜索工具引进依赖
+# 定义搜索工具
 def internet_search(
     query: str,
     max_results: int = 5,
@@ -32,7 +32,7 @@ def internet_search(
         topic=topic,
     )
 
-# 创建Agent并提示系统提示词引进依赖
+# 创建Agent并提示系统提示词
     # 使用硅基流动接入模型（当前免费的 Qwen2.5-7B 即可跑通，复杂任务可改用 GLM-5.2）
 model = ChatOpenAI(
     model=os.environ.get("MODEL_NAME", "Qwen/Qwen2.5-7B-Instruct"),  # 可用 MODEL_NAME 覆盖
